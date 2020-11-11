@@ -1,0 +1,28 @@
+{
+   "model":{
+      "conv_1_channel":20,
+      "conv_1_window":5,
+      "pool_1_window":2,
+      "pool_1_stride":2,
+      "conv_2_channel":20,
+      "conv_2_window":5,
+      "pool_2_window":2,
+      "pool_2_stride":2,
+      "dropout":0,
+      "optimizer":"Adam",
+      "learning_rate":0.001
+   },
+   "train":{
+      "train_dir":"data/training",
+      "val_dir":"data/testing",
+      "model_save_dir":"models/train",
+      "checkpoint_dir":null,
+      "assets_save_dir":"assets/graphs",
+      "results_file_path":"assets/results/results.csv",
+      "epochs":100,
+      "batch_size":64
+   },
+   "augment":{
+      "image_size":150
+   }
+}
