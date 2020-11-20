@@ -132,5 +132,4 @@ dmypy.json
 data/extra_yes/*
 data/testing/*
 data/training/*
-models/*
 .idea/*
