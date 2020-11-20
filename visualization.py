@@ -82,7 +82,7 @@ def main(model_path, images):
         jet_heatmap = jet_heatmap.resize((img.shape[1], img.shape[0]))
         jet_heatmap = keras.preprocessing.image.img_to_array(jet_heatmap)
 
-        superimposed_img = jet_heatmap * 0.6 + img
+        superimposed_img = jet_heatmap * 0.5 + img
         superimposed_img = array_to_img(superimposed_img)
 
         new_name = Path(image_path).stem + '_grad_cam.jpg'
