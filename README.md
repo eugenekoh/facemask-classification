@@ -12,6 +12,12 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
+# extract data
+cd data
+cat data.zip.* > data.zip
+unzip data.zip
+cd ..
+
 # train the model
 python train.py --config config.json
 
